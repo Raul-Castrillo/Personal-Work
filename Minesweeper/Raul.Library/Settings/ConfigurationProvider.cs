@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Configuration;
 
-namespace Raul.Minesweeper.Library.Settings
+namespace Raul.Library.Settings
 {
-    class ConfigurationProvider : IConfigurationProvider
+    public class ConfigurationProvider : IConfigurationProvider
     {
         public T Get<T>(string name)
         {
@@ -14,8 +14,8 @@ namespace Raul.Minesweeper.Library.Settings
             }
             catch (Exception ex)
             {
-                //TODO create logger and initialize it on Progam/Global.asax
-                throw;
+                Logger.Logger.Instance.Error("Error on configuration provider. Name={0} could not be found on configuration", name);
+                throw ex;
             }
             return result;
         }

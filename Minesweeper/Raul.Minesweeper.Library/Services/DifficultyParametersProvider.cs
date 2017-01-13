@@ -1,7 +1,7 @@
-﻿using Raul.Minesweeper.Library.Enums;
+﻿using Raul.Library.Settings;
+using Raul.Minesweeper.Library.Enums;
 using Raul.Minesweeper.Library.Model;
 using Raul.Minesweeper.Library.Services.Interfaces;
-using Raul.Minesweeper.Library.Settings;
 
 namespace Raul.Minesweeper.Library.Services
 {

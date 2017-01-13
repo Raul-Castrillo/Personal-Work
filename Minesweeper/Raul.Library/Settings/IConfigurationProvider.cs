@@ -1,4 +1,4 @@
-﻿namespace Raul.Minesweeper.Library.Settings
+﻿namespace Raul.Library.Settings
 {
     public interface IConfigurationProvider
     {
